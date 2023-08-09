@@ -22,4 +22,7 @@ export const createAction = async ({request}) => {
         // sending the json string of the newBookmark object
         body: JSON.stringify(newBookmark)
     })
+
+    // redirect the user to the frontend index route
+    return redirect('/')
 }
