@@ -62,8 +62,13 @@ body{
     text-decoration: underline;
 }
 
-.bookmark{
+.bookmark-card {
+    display: flex;
     text-align: center;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
 }
 
 input {
