@@ -1,14 +1,3 @@
-$maincolor: #08bd7d;
-$contrastcolor: black;
-
-@mixin black-text-tiffanyblue-bg {
-    color: $contrastcolor;
-    background-color:#96DBD6
-}
-
-nav {
-    @include black-text-tiffanyblue-bg;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+input {
+    margin: 10px;
 }

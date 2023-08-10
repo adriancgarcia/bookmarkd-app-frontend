@@ -7,8 +7,8 @@ function Index(props) {
         <div>
             <h2>Create a Bookmark</h2>
             <Form action="/create" method="post">
-                <input type="text" name="title" placeholder="bookmark'd page" />
-                <input type="text" name="url" placeholder="bookmark'd url" />
+                <input type="text" name="title" placeholder="website" />
+                <input type="text" name="url" placeholder="url" />
                 <input type="submit" value="Create Bookmark" />
             </Form>
 
