@@ -11,8 +11,8 @@ function Show (props) {
 
             <h2>Update</h2>
             <Form action={`/update/${bookmark._id}`} method="post">
-                <input type="text" name="title" placeholder="bookmark'd page" defaultValue={bookmark.title} />
-                <input type="text" name="url" placeholder="bookmark'd url" defaultValue={bookmark.url} />
+                <input type="text" name="title" placeholder="website" defaultValue={bookmark.title} />
+                <input type="text" name="url" placeholder="url" defaultValue={bookmark.url} />
                 <input type="submit" value="Update Bookmark" />
             </Form>
 
