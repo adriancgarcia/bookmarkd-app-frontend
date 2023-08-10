@@ -7,22 +7,22 @@ function Index(props) {
         <div>
             <h2>Create a Bookmark</h2>
             <Form action="/create" method="post">
-                <input type="text" name="title" placeholder="bookmark'd page" />
-                <input type="text" name="url" placeholder="bookmark'd url" />
-                <input type="submit" value="Create Bookmark" />
+                <input type="text" name="title" placeholder="website" />
+                <input type="text" name="url" placeholder="url" />
+                <input type="submit" value="Add Bookmark" />
             </Form>
-
-            {bookmarks.map((bookmark, index) => {
-                return (
-                    <div key={bookmark._id} className="bookmark">
+       
+                {bookmarks.map((bookmark, index) => {
+                    return (
+                    <div key={bookmark._id}         className="bookmark">
                         <Link to={`/${bookmark._id}`}>
                             <h1>{bookmark.title}</h1>
                         </Link>
                     </div>
-                );
-            })}
-            </div>
-        );
-    };
+                )
+            })};
+        </div>
+    );
+};
 
-    export default Index;
+export default Index;

@@ -1,0 +1,36 @@
+$maincolor: #08bd7d;
+$contrastcolor: black;
+
+@mixin black-text-tiffanyblue-bg {
+    color: $contrastcolor;
+    background-color:#96DBD6
+}
+
+
+nav {
+    @include black-text-tiffanyblue-bg;
+    // background-color: #96DBD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    a {
+        margin: 10px;
+        text-decoration: none;
+    }
+}
+
+.bookmarkList {
+
+    a {
+        text-decoration: none;
+    } 
+
+}
+
+input {
+    // display: flex;
+    // justify-content: center;
+    // align-items: row;
+    margin: 10px;
+}
