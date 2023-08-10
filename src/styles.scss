@@ -1,0 +1,67 @@
+.nav {
+    background-color: #8bd7d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px;
+    height: 100px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.index {
+    text-align: center;
+}
+
+.createForm {
+    margin-bottom: 30px;
+}
+
+.createForm input {
+    margin-left: 10px;
+}
+
+.bookmarksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+
+.bookmarks {
+    background: #49c6e5;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.bookmarks:nth-child(2n) {
+    background-color: #54DEFD;
+}
+
+.bookmarks a {
+    text-decoration: none;
+    color: black;
+}
+
+.bookmarks a:hover {
+    text-decoration: underline;
+}
+
+.bookmark{
+    text-align: center;
+}
+
+body{
+    background-color: #00bd90;
+}
