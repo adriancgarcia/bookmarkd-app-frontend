@@ -18,7 +18,6 @@ function Index(props) {
                         <Link to={`/${bookmark._id}`}>
                             <h1>{bookmark.title}</h1>
                         </Link>
-                        <h3>{bookmark.url}</h3>
                     </div>
                 );
             })}
