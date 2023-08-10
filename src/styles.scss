@@ -6,19 +6,9 @@ $contrastcolor: black;
     background-color:#96DBD6
 }
 
-body{
-    background-color: #00bd90;
-}
-
 nav {
     @include black-text-tiffanyblue-bg;
-    // background-color: #96DBD6;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    a {
-        margin: 10px;
-        text-decoration: none;
-    }
 }
