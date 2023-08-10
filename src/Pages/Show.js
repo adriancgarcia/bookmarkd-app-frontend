@@ -7,7 +7,7 @@ function Show (props) {
     return (
         <div className="bookmark">
             <h1>{bookmark.title}</h1>
-            <h2>{bookmark.url}</h2>
+           <a href={bookmark.url} target="_blank" rel="noopener noreferrer">{bookmark.url}</a>
 
             <h2>Update</h2>
             <Form action={`/update/${bookmark._id}`} method="post">
@@ -16,7 +16,7 @@ function Show (props) {
                 <input type="submit" value="Update Bookmark" />
             </Form>
 
-            <h2>Updated Bookmark</h2>
+            <h2>Delete Bookmark</h2>
             <Form action={`/delete/${bookmark._id}`} method="post">
                 <input type="submit" value="Delete Bookmark"/>
             </Form>
