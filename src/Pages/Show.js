@@ -16,7 +16,7 @@ function Show (props) {
                 <input type="submit" value="Update Bookmark" />
             </Form>
 
-            <h2>Delete Bookmark</h2>
+            {/* <h2>Delete Bookmark</h2> */}
             <Form action={`/delete/${bookmark._id}`} method="post">
                 <input type="submit" value="Delete Bookmark"/>
             </Form>
