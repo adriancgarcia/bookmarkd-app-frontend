@@ -1,6 +1,6 @@
 import {Link, useLoaderData, Form} from "react-router-dom"
 
-function INdex(props) {
+function Index(props) {
     const bookmarks = useLoaderData()
 
     return (
