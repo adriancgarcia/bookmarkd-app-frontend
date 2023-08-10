@@ -50,3 +50,16 @@ export const updateAction = async ({request, params}) => {
     // redirect the user back to the show page frontend route
     return redirect(`/${id}`)
 }
+
+export const deleteAction = async ({params}) => {
+    // grabbing the id from params
+    const id = params.id
+    // send a delete request to our backend api
+    await fetch(`${baseUrl}/bookmarks/${id}`, {
+        // telling fetch to make a delete request
+        method: 'Delete'
+        // delete request don't require headers
+    })
+    // redirect the user back to the frontend index route
+    return redirect('/')
+}
