@@ -1,1 +1,1 @@
-export const baseUrl = "https://bookmarkd-app-backend-3.onrender.com/"
+export const baseUrl = "https://bookmarkd-app-backend-3.onrender.com"
