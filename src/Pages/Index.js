@@ -1,14 +1,32 @@
 import {Link, useLoaderData, Form} from "react-router-dom"
+import { useState } from "react"
 
 function Index(props) {
     const bookmarks = useLoaderData()
+    const [formData, setFormData] = useState({
+        title: "",
+        url: ""
+    })
+
+    const handleChange = (event) => {
+        const newState = {...formData}
+        newState[event.target.name] = event.target.value
+        setFormData(newState)
+    }
+
+    const handleSubmit = (event => {
+        setFormData({
+            title: "",
+            url: ""
+        })
+    })
 
     return (
         <div className="bookmarksContainer">
             <h2 className="index">Create a Bookmark</h2>
-            <Form action="/create" method="post" className="createForm">
-                <input type="text" name="title" placeholder="website" />
-                <input type="text" name="url" placeholder="url" />
+            <Form action="/create" method="post" onSubmit={handleSubmit} className="createForm">
+                <input type="text" name="title" value={formData.title} onChange={handleChange} placeholder="website" />
+                <input type="text" name="url" value={formData.url} onChange={handleChange} placeholder="url" />
                 <input type="submit" value="Create Bookmark" />
             </Form>
 
