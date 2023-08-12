@@ -2,7 +2,7 @@ import { useLoaderData, Form } from "react-router-dom";
 
 function Show (props) {
     const bookmark = useLoaderData();
-    console.log(bookmark);
+    // console.log(bookmark);
 
     return (
         <div className="bookmark-card">
